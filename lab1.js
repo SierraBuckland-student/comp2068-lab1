@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
+  <title>Sierra Buckland Lab1</title>
 </head>
 <body>
 <p>Click the button to play a game of Rock Paper Scissors.</p>
