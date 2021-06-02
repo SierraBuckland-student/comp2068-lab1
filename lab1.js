@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Sierra Buckland Lab1</title>
+  <title>Lab 1</title>
 </head>
 <body>
 <p>Click the button to play a game of Rock Paper Scissors.</p>
@@ -30,13 +30,13 @@ function mainGameFunction() {
   //only begin game if valid word entered by user
   if (userSelection == "ROCK" || userSelection == "PAPER" || userSelection == "SCISSORS") {   
     console.log("User has played: " + userSelection);
-    console.log("Computer has played: " + computerSelection);
-    console.log(winner(computerSelection, userSelection));
+    console.log("Computer has played: " + computerSelection);    
+    winner(userSelection, computerSelection);
   } 
 }
   
 //determine winner  
-function winner(userSelection, computerSelection) {   
+function winner(userSelection, computerSelection) { 
     if (userSelection == "ROCK" && computerSelection == "PAPER"){
         console.log("Computer Wins!");
     }  
@@ -65,7 +65,7 @@ function winner(userSelection, computerSelection) {
         console.log("It's a tie!");
     }
 }
-
+  
 </script>
 </body>
 </html>
