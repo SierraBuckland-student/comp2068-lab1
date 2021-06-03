@@ -1,39 +1,23 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Lab 1</title>
-</head>
-<body>
-<p>Click the button to play a game of Rock Paper Scissors.</p>
-
-<button onclick="mainGameFunction()">Play</button>
-
-<script>
+var userSelection = prompt("Enter either Rock, Paper, or Scissors to play.", "").toUpperCase();
+var computerSelection = Math.random();
   
-function mainGameFunction() {
-  var userSelection = prompt("Enter either Rock, Paper, or Scissors to play.", "").toUpperCase();
-  var computerSelection = Math.random();
-  
-  //determine what computer played
-  if (computerSelection < 0.35) {
+//determine what computer played
+if (computerSelection < 0.35) {
      computerSelection = "PAPER";
-  }
-  else if (computerSelection > 0.34 && computerSelection < 0.68) {
+}
+else if (computerSelection > 0.34 && computerSelection < 0.68) {
      computerSelection = "SCISSORS";
-  }
-  else if (randocomputerSelectionmNumber > 0.67 && computerSelection < 1.00) {
+}
+else if (randocomputerSelectionmNumber > 0.67 && computerSelection < 1.00) {
      computerSelection = "ROCK";
-  }
+}
   
-  //only begin game if valid word entered by user
-  if (userSelection == "ROCK" || userSelection == "PAPER" || userSelection == "SCISSORS") {   
+//only begin game if valid word entered by user
+if (userSelection == "ROCK" || userSelection == "PAPER" || userSelection == "SCISSORS") {   
     console.log("User has played: " + userSelection);
     console.log("Computer has played: " + computerSelection);    
     winner(userSelection, computerSelection);
-  } 
-}
+} 
   
 //determine winner  
 function winner(userSelection, computerSelection) { 
@@ -65,7 +49,3 @@ function winner(userSelection, computerSelection) {
         console.log("It's a tie!");
     }
 }
-  
-</script>
-</body>
-</html>
